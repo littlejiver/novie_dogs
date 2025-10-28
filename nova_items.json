@@ -1,0 +1,74 @@
+[
+  {
+    "subtypes": [ "TOOL" ],
+    "type": "ITEM",
+    "id": "novas_walking_leash",
+    "category": "tools",
+    "name": { "str": "Nova's Walking Leash" },
+    "description": "A well-worn but sturdy leash that once connected a loyal Labrador to her beloved daddy. The handle is smooth from countless walks together, and it still carries the faint scent of adventure and unconditional love. When held, it brings comfort and memories of simpler times.",
+    "weight": "120 g",
+    "volume": "250 ml",
+    "price": "1500 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "nylon", "plastic" ],
+    "symbol": "/",
+    "color": "blue",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You hold Nova's leash close and remember better days. The memories of loyal walks bring you peace.",
+      "effects": [ { "id": "happy", "duration": "6 h" } ]
+    },
+    "flags": [ "BELT_CLIP" ],
+    "qualities": [ [ "ROPE", 1 ] ]
+  },
+  {
+    "type": "ITEM",
+    "id": "novas_tennis_ball",
+    "category": "weapons",
+    "name": { "str": "Nova's Tennis Ball" },
+    "description": "A slightly chewed tennis ball, bright yellow-green despite the apocalypse. Nova's playful spirit seems to live on in this simple toy. Perfect for throwing - she always brought it back with such joy.",
+    "weight": "57 g",
+    "volume": "100 ml",
+    "price": "200 USD",
+    "price_postapoc": "10 USD",
+    "material": [ "rubber" ],
+    "symbol": "o",
+    "color": "yellow",
+    "thrown_damage": [ { "damage_type": "bash", "amount": 2 } ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "id": "novas_comfort_collar",
+    "category": "clothing",
+    "name": { "str": "Nova's Comfort Collar" },
+    "description": "A soft, padded collar that once graced the neck of a gentle Labrador. It's adjustable and surprisingly comfortable for humans too. Wearing it brings a sense of Nova's submissive, friendly nature - a reminder that sometimes being gentle is the greatest strength.",
+    "weight": "85 g",
+    "volume": "150 ml",
+    "price": "800 USD",
+    "price_postapoc": "25 USD",
+    "material": [ "cotton", "plastic" ],
+    "symbol": ")",
+    "color": "pink",
+    "warmth": 5,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "armor": [
+      {
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_neck" ],
+        "encumbrance": 0,
+        "coverage": 20,
+        "material": [ { "type": "cotton", "covered_by_mat": 100, "thickness": 2.0 } ]
+      }
+    ],
+    "flags": [ "BELTED", "OVERSIZE" ],
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [ { "value": "PAIN", "add": -1 }, { "value": "SOCIAL_PERSUADE", "add": 1 } ]
+      }
+    ]
+  }
+]

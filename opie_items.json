@@ -1,0 +1,119 @@
+[
+  {
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "id": "opies_tough_collar",
+    "category": "clothing",
+    "name": { "str": "Opie's Tough Collar" },
+    "description": "A heavy-duty spiked collar that once belonged to a pitbull who was all muscle and heart. Despite its intimidating appearance, you can still see scratches from playful roughhousing. This collar says 'don't mess with me' while somehow still radiating the joy of a dog who just wants to play.",
+    "weight": "180 g",
+    "volume": "200 ml",
+    "price": "1200 USD",
+    "price_postapoc": "40 USD",
+    "material": [ "leather", "steel" ],
+    "symbol": ")",
+    "color": "brown",
+    "warmth": 10,
+    "material_thickness": 3,
+    "environmental_protection": 3,
+    "armor": [
+      {
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_neck" ],
+        "encumbrance": 1,
+        "coverage": 25,
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 3.0 },
+          { "type": "steel", "covered_by_mat": 20, "thickness": 1.5 }
+        ]
+      }
+    ],
+    "flags": [ "BELTED", "STURDY" ],
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "BONUS_BLOCK", "add": 1 } ]
+      }
+    ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "id": "opies_rope_toy",
+    "category": "tools",
+    "name": { "str": "Opie's Rope Toy" },
+    "description": "A thick, knotted rope toy that's been through countless tug-of-war battles with a powerful pitbull. The frayed ends tell stories of playful victories and the rope itself is surprisingly strong - Opie never did anything halfway. Perfect for climbing or securing things, just like Opie was perfect for protecting his family.",
+    "weight": "300 g",
+    "volume": "400 ml",
+    "price": "800 USD",
+    "price_postapoc": "30 USD",
+    "material": [ "cotton" ],
+    "symbol": "=",
+    "color": "white",
+    "qualities": [ [ "ROPE", 2 ] ],
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "opies_chew_bone",
+    "category": "food",
+    "name": { "str": "Opie's Chew Bone" },
+    "description": "A massive, well-gnawed bone that somehow survived Opie's powerful jaws. The tooth marks are a testament to both his strength and his patience - he could have destroyed this in minutes, but he savored it for months. Chewing on it brings back memories of a dog who was gentle with what he loved and fierce with what threatened it.",
+    "weight": "400 g",
+    "volume": "500 ml",
+    "stack_size": 10,
+    "price": "500 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "bone" ],
+    "symbol": ")",
+    "color": "white",
+    "comestible_type": "MED",
+    "healthy": 1,
+    "fun": 8,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You chew on Opie's bone and feel his tough, protective spirit flow through you.",
+      "effects": [ { "id": "happy", "duration": "4 h" } ]
+    },
+    "flags": [ "EATEN_COLD" ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "id": "opies_muscle_harness",
+    "category": "clothing",
+    "name": { "str": "Opie's Muscle Harness" },
+    "description": "A reinforced tactical harness designed for a pitbull who was all business when it came to protecting his pack. The padding shows wear from a dog who pulled with purpose and played with passion. Wearing this makes you feel ready to take on the world, just like Opie always was.",
+    "weight": "450 g",
+    "volume": "600 ml",
+    "price": "2000 USD",
+    "price_postapoc": "80 USD",
+    "material": [ "nylon", "plastic" ],
+    "symbol": "[",
+    "color": "black",
+    "warmth": 15,
+    "material_thickness": 2,
+    "environmental_protection": 5,
+    "armor": [
+      {
+        "covers": [ "torso" ],
+        "encumbrance": 2,
+        "coverage": 40,
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "plastic", "covered_by_mat": 30, "thickness": 1.5 }
+        ]
+      }
+    ],
+    "flags": [ "BELTED", "STURDY", "OUTER" ],
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [ { "value": "STRENGTH", "add": 2 }, { "value": "SPEED", "add": 5 } ]
+      }
+    ]
+  }
+]

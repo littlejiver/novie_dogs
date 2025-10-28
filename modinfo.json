@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "novie_dogs",
+    "name": "Novie - The Dog Pack Mod",
+    "authors": [ "littlejiver" ],
+    "description": "A heartfelt tribute to Nova, Opie, and the whole pack. Adds dog-themed items, gear, and companions inspired by real furry family members.",
+    "category": "items",
+    "dependencies": [ "dda" ],
+    "version": "1.0.0"
+  }
+]
