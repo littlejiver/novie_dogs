@@ -70,5 +70,218 @@
         "values": [ { "value": "PAIN", "add": -1 }, { "value": "SOCIAL_PERSUADE", "add": 1 } ]
       }
     ]
+  },
+  {
+    "type": "ITEM",
+    "id": "novas_dog_bed",
+    "category": "furniture",
+    "name": { "str": "Nova's Dog Bed" },
+    "description": "A plush, cushioned dog bed that still holds the impression of where Nova used to curl up. The fabric is soft and worn from countless naps. Sleeping on it brings dreams of loyal companionship and peaceful rest.",
+    "weight": "1500 g",
+    "volume": "4 L",
+    "price": "4000 USD",
+    "price_postapoc": "100 USD",
+    "material": [ "cotton", "plastic" ],
+    "symbol": "#",
+    "color": "brown",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You rest on Nova's bed and feel her comforting presence. Sweet dreams come easier here.",
+      "effects": [ { "id": "sleep", "duration": "8 h" }, { "id": "happy", "duration": "4 h" } ]
+    },
+    "flags": [ "SLEEP_AID" ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "id": "novas_blanket",
+    "category": "clothing",
+    "name": { "str": "Nova's Blanket" },
+    "description": "A soft fleece blanket that Nova loved to snuggle under. It still smells faintly of her warmth and comfort. Wrapping yourself in it feels like receiving a gentle hug from your faithful companion.",
+    "weight": "800 g",
+    "volume": "2 L",
+    "price": "2500 USD",
+    "price_postapoc": "75 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "light_blue",
+    "warmth": 15,
+    "material_thickness": 3,
+    "armor": [
+      {
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
+        "encumbrance": 5,
+        "coverage": 80,
+        "material": [ { "type": "cotton", "covered_by_mat": 100, "thickness": 3.0 } ]
+      }
+    ],
+    "flags": [ "OUTER", "OVERSIZE" ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You wrap yourself in Nova's blanket and feel her loving warmth surround you.",
+      "effects": [ { "id": "happy", "duration": "3 h" } ]
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "novas_sticky_toy",
+    "category": "tools",
+    "name": { "str": "Nova's Sticky Toy" },
+    "description": "A rubber sticky toy covered in Nova's teeth marks and slobber stains. Despite its worn appearance, it's still wonderfully sticky and fun to fidget with. Playing with it brings back memories of Nova's playful energy.",
+    "weight": "45 g",
+    "volume": "80 ml",
+    "price": "300 USD",
+    "price_postapoc": "15 USD",
+    "material": [ "rubber" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You squeeze and fidget with Nova's sticky toy. The tactile sensation calms your nerves and brightens your mood.",
+      "effects": [ { "id": "happy", "duration": "2 h" } ]
+    },
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "CONTAINER" ],
+    "id": "novas_daddy_food_bowl",
+    "category": "tools",
+    "name": { "str": "Nova's Special Food Bowl" },
+    "description": "A well-loved stainless steel bowl with Nova's name etched on the side. It's been licked clean thousands of times by a devoted Labrador who always waited patiently for Daddy to fill it. Using this bowl for your own meals brings comfort and reminds you of Nova's gentle patience and unwavering trust in her Daddy.",
+    "weight": "200 g",
+    "volume": "1 L",
+    "price": "300 USD",
+    "price_postapoc": "15 USD",
+    "material": [ "steel" ],
+    "symbol": ")",
+    "color": "light_gray",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "3 kg",
+        "watertight": true,
+        "rigid": true
+      }
+    ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You eat from Nova's bowl and feel her patient, loving presence. She always trusted Daddy completely to take care of her.",
+      "effects": [ { "id": "happy", "duration": "8 h" }, { "id": "well_fed", "duration": "2 h" } ]
+    }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "daddys_loving_pets",
+    "category": "food",
+    "name": { "str": "Memory of Daddy's Loving Pets" },
+    "description": "This isn't a physical item, but a precious memory of Nova's favorite treat - the gentle pets and scratches from her beloved Daddy. When you close your eyes and remember how she would run to you with pure joy, tail wagging, seeking nothing but your loving touch, it fills your heart with warmth stronger than any medicine. Nova's love for Daddy was absolute and pure.",
+    "weight": "0 g",
+    "volume": "1 ml",
+    "stack_size": 999,
+    "price": "0 USD",
+    "price_postapoc": "0 USD",
+    "material": [ "paper" ],
+    "symbol": "*",
+    "color": "pink",
+    "comestible_type": "MED",
+    "healthy": 3,
+    "fun": 15,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You remember Nova running to Daddy with pure love, seeking only gentle pets. Your heart swells with the memory of her unconditional devotion and trust.",
+      "effects": [ { "id": "happy", "duration": "12 h" }, { "id": "took_prozac", "duration": "6 h" } ]
+    },
+    "flags": [ "TRADER_AVOID", "ZERO_WEIGHT" ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "id": "novas_swimming_harness",
+    "category": "clothing",
+    "name": { "str": "Nova's Swimming Harness" },
+    "description": "A bright orange flotation harness that once helped a golden Labrador mix enjoy safe swims with Daddy. Nova loved the water almost as much as she loved her Daddy. The harness is adjustable and surprisingly buoyant - perfect for water adventures. You can almost hear her happy splashing and see her golden coat glistening as she paddled back to shore, always returning to Daddy's side.",
+    "weight": "400 g",
+    "volume": "1500 ml",
+    "price": "1500 USD",
+    "price_postapoc": "60 USD",
+    "material": [ "neoprene", "plastic" ],
+    "symbol": "[",
+    "color": "yellow",
+    "warmth": 10,
+    "material_thickness": 2,
+    "environmental_protection": 8,
+    "armor": [
+      {
+        "covers": [ "torso" ],
+        "encumbrance": 1,
+        "coverage": 50,
+        "material": [
+          { "type": "neoprene", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "plastic", "covered_by_mat": 40, "thickness": 1.0 }
+        ]
+      }
+    ],
+    "flags": [ "BELTED", "WATERPROOF", "FLOTATION" ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You adjust Nova's harness and feel her playful splashing beside you. The memory keeps you calm in the water.",
+      "effects": [ { "id": "happy", "duration": "2 h" } ]
+    }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "id": "novas_digging_tools",
+    "category": "tools",
+    "name": { "str": "Nova's Digging Tools" },
+    "description": "A small garden trowel and brush, both marked with Nova's muddy pawprints. Nova loved to dig - sometimes to Daddy's dismay, but always with such enthusiasm and protective instinct. These tools remind you of her playful spirit and fierce loyalty. She may have made a few holes in the yard while guarding her territory, but she dug her way permanently into Daddy's heart.",
+    "weight": "300 g",
+    "volume": "400 ml",
+    "price": "600 USD",
+    "price_postapoc": "25 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": ";",
+    "color": "brown",
+    "qualities": [ [ "DIG", 2 ], [ "CUT", 1 ] ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You remember Nova's enthusiastic digging and protective spirit. Every hole was dug with love, energy, and devotion to Daddy.",
+      "effects": [ { "id": "happy", "duration": "4 h" } ]
+    },
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "id": "novas_daddy_sleeping_spot",
+    "category": "clothing",
+    "name": { "str": "Nova's Favorite Sleeping Spot" },
+    "description": "A section of soft bedding that still holds the shape where Nova would curl up right next to Daddy every single night. Golden and cream fur still clings to the fabric - evidence of a loyal Lab mix who knew her rightful place was always by Daddy's side. The warmth and comfort this brings is beyond measure, like having Nova's protective, loving presence watching over you as you sleep.",
+    "weight": "900 g",
+    "volume": "2500 ml",
+    "price": "800 USD",
+    "price_postapoc": "30 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "yellow",
+    "warmth": 30,
+    "material_thickness": 4,
+    "armor": [
+      {
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
+        "encumbrance": 0,
+        "coverage": 90,
+        "material": [ { "type": "cotton", "covered_by_mat": 100, "thickness": 4.0 } ]
+      }
+    ],
+    "flags": [ "OVERSIZE", "OUTER", "SLEEP_AID" ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You settle into Nova's favorite spot and feel her comforting weight curl against you. The pain eases while the memory lasts.",
+      "effects": [ { "id": "happy", "duration": "4 h" }, { "id": "painkiller", "intensity": 1, "duration": "1 h" } ]
+    }
   }
 ]

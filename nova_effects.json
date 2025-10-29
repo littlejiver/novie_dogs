@@ -1,0 +1,7 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NOVA_UNUSED",
+    "effect": [ { "message": "Deprecated" } ]
+  }
+]

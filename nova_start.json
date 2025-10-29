@@ -1,0 +1,36 @@
+[
+  {
+    "type": "profession",
+    "id": "prof_nova_pack_parent",
+    "name": { "male": "Nova's Daddy", "female": "Nova's Mommy" },
+    "description": "You kept Nova safe through every storm. You start with her keepsakes and the love that still surrounds you both.",
+    "points": 0,
+    "skills": [ { "name": "swimming", "level": 2 }, { "name": "survival", "level": 2 } ],
+    "items": {
+      "both": [
+        "novas_walking_leash",
+        "novas_tennis_ball",
+        "novas_comfort_collar",
+        "novas_swimming_harness",
+        "novas_digging_tools",
+        "daddys_loving_pets"
+      ],
+      "male": [ "tshirt", "jeans", "socks", "sneakers", "hoodie" ],
+      "female": [ "tshirt", "jeans", "socks", "sneakers", "hoodie" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "scenario",
+    "id": "scen_nova_pack_survivor",
+    "name": "Nova's Daddy",
+    "description": "You made it through the Cataclysm with Nova at your side. Your faithful Labrador mix still looks to you for love and guidance, and together you'll find a way to keep the whole pack safe.",
+    "points": 0,
+    "allowed_locs": [ "sloc_shelter" ],
+    "start_location": "sloc_shelter",
+    "professions": [ "prof_nova_pack_parent" ],
+    "flags": [ "CITY_START" ],
+    "start_name": "Nova's Safehouse",
+    "start_eocs": [ "EOC_NOVA_SUMMON_COMPANION" ]
+  }
+]

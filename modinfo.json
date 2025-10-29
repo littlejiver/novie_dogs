@@ -7,6 +7,6 @@
     "description": "A heartfelt tribute to Nova, Opie, and the whole pack. Adds dog-themed items, gear, and companions inspired by real furry family members.",
     "category": "items",
     "dependencies": [ "dda" ],
-    "version": "1.0.0"
+    "version": "1.0.1"
   }
 ]

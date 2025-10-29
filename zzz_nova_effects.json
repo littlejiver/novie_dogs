@@ -1,0 +1,12 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NOVA_SUMMON_COMPANION",
+    "effect": [
+      { "message": "Nova bounds to your side, tail wagging with love." },
+      {
+        "u_spawn_monster": { "monster": "mon_nova_companion", "friendly": true, "name": "Nova", "target": "u_adjacent_free" }
+      }
+    ]
+  }
+]

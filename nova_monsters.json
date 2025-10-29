@@ -1,0 +1,14 @@
+[
+  {
+    "type": "MONSTER",
+    "id": "mon_nova_companion",
+    "copy-from": "mon_dog_labrador",
+    "name": { "str": "Nova" },
+    "description": "Nova is your loyal golden Lab mix. She sticks close with trusting eyes and a wagging tail, ready to protect her family even in the Cataclysm.",
+    "diff": 0,
+    "special_attacks": [  ],
+    "harvest": "null",
+    "revert_to_itype": "null",
+    "petfood": { "type": "DOGFOOD", "message": "Nova perks up at the taste and leans into your hand." }
+  }
+]
